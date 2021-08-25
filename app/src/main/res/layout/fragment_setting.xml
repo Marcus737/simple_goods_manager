@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   tools:context=".fragment.SettingFragment">
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline104"
+                                                android:orientation="vertical"
+                                                app:layout_constraintGuide_percent="0.05"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline105"
+                                                android:orientation="vertical"
+                                                app:layout_constraintGuide_percent="0.95"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline106"
+                                                android:orientation="horizontal"
+                                                app:layout_constraintGuide_percent="0.05"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline108"
+                                                android:orientation="horizontal"
+                                                app:layout_constraintGuide_percent="0.23"/>
+    <TextView
+            android:text="今日收入"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView48"
+            app:layout_constraintEnd_toStartOf="@+id/guideline109"
+            app:layout_constraintStart_toStartOf="@+id/guideline104"
+            app:layout_constraintTop_toTopOf="@+id/guideline108"
+            app:layout_constraintBottom_toTopOf="@+id/guideline108" android:textSize="24sp"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline109"
+                                                android:orientation="vertical"
+                                                app:layout_constraintGuide_percent="0.33"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView50"
+            app:layout_constraintStart_toStartOf="@+id/guideline109"
+            app:layout_constraintEnd_toStartOf="@+id/guideline105"
+            app:layout_constraintTop_toTopOf="@+id/guideline108"
+            app:layout_constraintBottom_toTopOf="@+id/guideline108" android:textSize="24sp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

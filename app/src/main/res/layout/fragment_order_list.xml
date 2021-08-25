@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   tools:context=".fragment.OrderListFragment">
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline89"
+                                                android:orientation="horizontal"
+                                                app:layout_constraintGuide_percent="0.05"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline90"
+                                                android:orientation="vertical"
+                                                app:layout_constraintGuide_percent="0.5"/>
+    <TextView
+            android:text="@string/order_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView43"
+            app:layout_constraintTop_toTopOf="@+id/guideline89"
+            app:layout_constraintBottom_toTopOf="@+id/guideline89" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:textSize="@dimen/top_text_size" android:textStyle="bold"/>
+    <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="@+id/guideline92"
+            app:layout_constraintTop_toTopOf="@+id/guideline91" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline93" android:id="@+id/orderList"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline91"
+                                                android:orientation="horizontal"
+                                                app:layout_constraintGuide_percent="0.15"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline92"
+                                                android:orientation="vertical"
+                                                app:layout_constraintGuide_percent="0.05"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline93"
+                                                android:orientation="vertical"
+                                                app:layout_constraintGuide_percent="0.95"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

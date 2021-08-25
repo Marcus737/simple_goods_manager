@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">商品管理</string>
+    <string name="title_activity_goods">GoodsActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="goods_name">商品</string>
+    <string name="inventory">库存</string>
+
+    <string name="setting_name">设置</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_goods_type_name">添加商品种类</string>
+    <string name="all_goods">所有商品</string>
+    <string name="goods_update">商品信息更新</string>
+    <string name="inventory_list">查看库存</string>
+    <string name="inventory_update">更新库存</string>
+    <string name="inventory_name">库存</string>
+    <string name="order_name">订单</string>
+    <string name="order_add">新增订单</string>
+    <string name="order_no_pay">未支付订单</string>
+    <string name="order_list">所有订单</string>
+    <string name="goods_add_detail">商品添加页面</string>
+    <string name="goods_add_by_code">扫码添加</string>
+    <string name="confirm">确定</string>
+    <string name="goods_list">商品列表</string>
+    <string name="goods_detail_name">商品详情</string>
+    <string name="inventory_list2">库存列表</string>
+    <string name="goodsNum">商品个数:</string>
+    <string name="inventory_detail">库存详情</string>
+    <string name="goods_name1">商品名称:</string>
+    <string name="goods_num">商品数量</string>
+    <string name="goods_price">商品价格</string>
+    <string name="note">备注:</string>
+    <string name="enable">是否启用</string>
+    <string name="manu">厂商</string>
+    <string name="spec">规格</string>
+    <string name="trademark">商标/品牌:</string>
+    <string name="goodsType">货物类型</string>
+    <string name="manuAddress">厂商地址:</string>
+    <string name="add_goods_button">点击添加</string>
+    <string name="order_detail">订单详情</string>
+    <string name="order_create_time">订单创建时间</string>
+    <string name="order_state">订单状态</string>
+    <string name="payed">已支付</string>
+    <string name="no_pay">未支付</string>
+</resources>

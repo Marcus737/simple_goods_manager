@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/nav"
+            app:startDestination="@id/goodsFragment">
+
+    <fragment android:id="@+id/goodsFragment" android:name="com.wei.ysx_android.fragment.GoodsFragment"
+              android:label="fragment_goods" tools:layout="@layout/fragment_goods">
+        <action android:id="@+id/action_goodsFragment_to_goodsAddDetailFragment"
+                app:destination="@id/goodsAddDetailFragment"/>
+        <action android:id="@+id/action_goodsFragment_to_goodsListFragment" app:destination="@id/goodsListFragment"/>
+    </fragment>
+    <fragment android:id="@+id/inventoryFragment" android:name="com.wei.ysx_android.fragment.InventoryFragment"
+              android:label="fragment_inventory" tools:layout="@layout/fragment_inventory">
+        <action android:id="@+id/action_inventoryFragment_to_inventoryListFragment"
+                app:destination="@id/inventoryListFragment"/>
+    </fragment>
+    <fragment android:id="@+id/orderFragment" android:name="com.wei.ysx_android.fragment.OrderFragment"
+              android:label="fragment_order" tools:layout="@layout/fragment_order">
+        <action android:id="@+id/action_orderFragment_to_orderAddDetailFragment"
+                app:destination="@id/orderAddDetailFragment"/>
+        <action android:id="@+id/action_orderFragment_to_orderListFragment" app:destination="@id/orderListFragment"/>
+        <action android:id="@+id/action_orderFragment_to_orderNoPayFragment" app:destination="@id/orderNoPayFragment"/>
+    </fragment>
+    <fragment android:id="@+id/settingFragment" android:name="com.wei.ysx_android.fragment.SettingFragment"
+              android:label="fragment_setting" tools:layout="@layout/fragment_setting"/>
+    <fragment android:id="@+id/goodsAddDetailFragment" android:name="com.wei.ysx_android.fragment.GoodsAddDetailFragment"
+              android:label="fragment_goods_add_detail" tools:layout="@layout/fragment_goods_add_detail"/>
+    <fragment android:id="@+id/goodsListFragment" android:name="com.wei.ysx_android.fragment.GoodsListFragment"
+              android:label="fragment_goods_list" tools:layout="@layout/fragment_goods_list">
+        <action android:id="@+id/action_goodsListFragment_to_goodsDetailFragment"
+                app:destination="@id/goodsDetailFragment"/>
+    </fragment>
+    <fragment android:id="@+id/goodsDetailFragment" android:name="com.wei.ysx_android.fragment.GoodsDetailFragment"
+              android:label="fragment_goods_detail" tools:layout="@layout/fragment_goods_detail"/>
+    <fragment android:id="@+id/inventoryListFragment" android:name="com.wei.ysx_android.fragment.InventoryListFragment"
+              android:label="InventoryListFragment">
+        <action android:id="@+id/action_inventoryListFragment_to_inventoryDetailFragment"
+                app:destination="@id/inventoryDetailFragment"/>
+    </fragment>
+    <fragment android:id="@+id/inventoryDetailFragment"
+              android:name="com.wei.ysx_android.fragment.InventoryDetailFragment"
+              android:label="fragment_inventory_detail" tools:layout="@layout/fragment_inventory_detail"/>
+    <fragment android:id="@+id/orderAddDetailFragment"
+              android:name="com.wei.ysx_android.fragment.OrderAddDetailFragment"
+              android:label="fragment_order_add_detail" tools:layout="@layout/fragment_order_add_detail"/>
+    <fragment android:id="@+id/orderListFragment" android:name="com.wei.ysx_android.fragment.OrderListFragment"
+              android:label="fragment_order_list" tools:layout="@layout/fragment_order_list">
+        <action android:id="@+id/action_orderListFragment_to_orderDetailFragment"
+                app:destination="@id/orderDetailFragment"/>
+    </fragment>
+    <fragment android:id="@+id/orderDetailFragment" android:name="com.wei.ysx_android.fragment.OrderDetailFragment"
+              android:label="fragment_order_detail" tools:layout="@layout/fragment_order_detail"/>
+    <fragment android:id="@+id/orderNoPayFragment" android:name="com.wei.ysx_android.fragment.OrderNoPayFragment"
+              android:label="OrderNoPayFragment">
+        <action android:id="@+id/action_orderNoPayFragment_to_orderDetailFragment"
+                app:destination="@id/orderDetailFragment"/>
+    </fragment>
+</navigation>

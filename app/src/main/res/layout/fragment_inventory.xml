@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   tools:context=".fragment.InventoryFragment">
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline21"
+                                                android:orientation="horizontal"
+                                                app:layout_constraintGuide_percent="0.15"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline22"
+                                                android:orientation="horizontal"
+                                                app:layout_constraintGuide_percent="0.23"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline19"
+                                                android:orientation="vertical"
+                                                app:layout_constraintGuide_percent="0.5"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline17"
+                                                android:orientation="vertical"
+                                                app:layout_constraintGuide_percent="0.35"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline18"
+                                                android:orientation="vertical"
+                                                app:layout_constraintGuide_percent="0.65"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline16"
+                                                android:orientation="vertical"
+                                                app:layout_constraintGuide_percent="0.95"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline11"
+                                                android:orientation="vertical"
+                                                app:layout_constraintGuide_percent="0.05109489"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline20"
+                                                android:orientation="horizontal"
+                                                app:layout_constraintGuide_percent="0.05"/>
+    <ImageView
+            android:src="@drawable/inventory_list"
+            android:layout_width="67dp"
+            android:layout_height="64dp" android:id="@+id/imageView8"
+            app:layout_constraintDimensionRatio="w,1:1"
+            app:layout_constraintTop_toTopOf="@+id/guideline21" app:layout_constraintBottom_toTopOf="@+id/guideline21"
+            app:layout_constraintStart_toStartOf="@+id/guideline11"
+            app:layout_constraintEnd_toStartOf="@+id/guideline17"/>
+    <TextView
+            android:text="@string/inventory_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView6"
+            app:layout_constraintTop_toTopOf="@+id/guideline22"
+            app:layout_constraintBottom_toTopOf="@+id/guideline22"
+            app:layout_constraintStart_toStartOf="@+id/guideline11"
+            app:layout_constraintEnd_toStartOf="@+id/guideline17" android:textStyle="bold"
+            android:textSize="@dimen/normal_size"/>
+    <ImageView
+            android:src="@drawable/inventory_update"
+            android:layout_width="67dp"
+            android:layout_height="64dp" android:id="@+id/imageView9"
+            app:layout_constraintDimensionRatio="h,1:1" app:layout_constraintEnd_toStartOf="@+id/guideline18"
+            app:layout_constraintStart_toStartOf="@+id/guideline17"
+            app:layout_constraintBottom_toTopOf="@+id/guideline21" app:layout_constraintTop_toTopOf="@+id/guideline21"/>
+    <TextView
+            android:text="@string/inventory_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView10"
+            android:textStyle="bold" android:textSize="@dimen/normal_size"
+            app:layout_constraintEnd_toStartOf="@+id/guideline18"
+            app:layout_constraintStart_toStartOf="@+id/guideline17"
+            app:layout_constraintTop_toTopOf="@+id/guideline22" app:layout_constraintBottom_toTopOf="@+id/guideline22"/>
+    <TextView
+            android:text="@string/inventory_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView11"
+            app:layout_constraintEnd_toStartOf="@+id/guideline18"
+            app:layout_constraintStart_toStartOf="@+id/guideline17"
+            app:layout_constraintTop_toTopOf="@+id/guideline20" app:layout_constraintBottom_toTopOf="@+id/guideline20"
+            android:textStyle="bold" android:textSize="@dimen/top_text_size"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

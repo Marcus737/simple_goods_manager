@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   tools:context=".fragment.OrderAddDetailFragment">
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline61"
+                                                android:orientation="vertical"
+                                                app:layout_constraintGuide_percent="0.05109489"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline64"
+                                                android:orientation="vertical"
+                                                app:layout_constraintGuide_percent="0.5"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline62"
+                                                android:orientation="vertical"
+                                                app:layout_constraintGuide_percent="0.95"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline63"
+                                                android:orientation="horizontal"
+                                                app:layout_constraintGuide_percent="0.05"/>
+    <TextView
+            android:text="@string/order_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView26"
+            app:layout_constraintEnd_toStartOf="@+id/guideline62"
+            app:layout_constraintStart_toStartOf="@+id/guideline61"
+            app:layout_constraintTop_toTopOf="@+id/guideline63" app:layout_constraintBottom_toTopOf="@+id/guideline63"
+            android:textSize="@dimen/top_text_size" android:textStyle="bold"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline82"
+                                                android:orientation="vertical"
+                                                app:layout_constraintGuide_percent="0.65"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView39"
+            app:layout_constraintStart_toStartOf="@+id/guideline82"
+            app:layout_constraintEnd_toStartOf="@+id/guideline62" app:layout_constraintTop_toTopOf="@+id/guideline63"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.352"
+            app:layout_constraintVertical_bias="0.25"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline83"
+                                                android:orientation="horizontal"
+                                                app:layout_constraintGuide_percent="0.82"/>
+    <Button
+            android:text="@string/confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/button5"
+            app:layout_constraintStart_toStartOf="@+id/guideline61"
+            app:layout_constraintEnd_toStartOf="@+id/guideline62" app:layout_constraintTop_toTopOf="@+id/guideline83"
+            app:layout_constraintBottom_toTopOf="@+id/guideline83" app:layout_constraintHorizontal_bias="0.891"
+            app:layout_constraintVertical_bias="0.541"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline84"
+                                                android:orientation="horizontal"
+                                                app:layout_constraintGuide_percent="0.85"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline85"
+                                                android:orientation="horizontal"
+                                                app:layout_constraintGuide_percent="0.12"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editTextTextPersonName13"
+            app:layout_constraintStart_toStartOf="@+id/guideline61"
+            app:layout_constraintEnd_toStartOf="@+id/guideline82" app:layout_constraintTop_toTopOf="@+id/guideline85"
+            app:layout_constraintBottom_toTopOf="@+id/guideline85" android:hint="输入商品名称搜索"
+            android:background="@android:drawable/editbox_background"/>
+    <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="0dp"
+            android:layout_height="479dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline82"
+            app:layout_constraintStart_toStartOf="@+id/guideline61"
+            app:layout_constraintTop_toTopOf="@+id/guideline86"
+            android:id="@+id/orderAddRecycleView" app:layout_constraintBottom_toTopOf="@+id/guideline86"
+            app:layout_constraintHorizontal_bias="0.0" app:layout_constraintVertical_bias="0.436"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline86"
+                                                android:orientation="horizontal"
+                                                app:layout_constraintGuide_percent="0.56"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline88"
+                                                android:orientation="horizontal"
+                                                app:layout_constraintGuide_percent="0.12"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView42"
+            app:layout_constraintTop_toTopOf="@+id/guideline88"
+            app:layout_constraintBottom_toTopOf="@+id/guideline88"
+            app:layout_constraintStart_toStartOf="@+id/guideline82"
+            app:layout_constraintEnd_toStartOf="@+id/guideline62" android:textSize="@dimen/top_text_size"
+            android:textStyle="bold"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

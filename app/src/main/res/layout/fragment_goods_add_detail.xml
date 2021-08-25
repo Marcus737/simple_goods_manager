@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   tools:context=".fragment.GoodsAddDetailFragment"
+                                                   android:layerType="none">
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline34"
+                                                android:orientation="horizontal"
+                                                app:layout_constraintGuide_percent="0.1"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline35"
+                                                android:orientation="horizontal"
+                                                app:layout_constraintGuide_percent="0.23"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline38"
+                                                android:orientation="horizontal"
+                                                app:layout_constraintGuide_percent="0.3"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline36"
+                                                android:orientation="horizontal"
+                                                app:layout_constraintGuide_percent="0.4"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline39"
+                                                android:orientation="horizontal"
+                                                app:layout_constraintGuide_percent="0.48"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline37"
+                                                android:orientation="vertical"
+                                                app:layout_constraintGuide_percent="0.5"/>
+    <TextView
+            android:text="@string/goods_add_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView16"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline34" app:layout_constraintBottom_toTopOf="@+id/guideline34"
+            android:textStyle="bold" android:textSize="@dimen/top_text_size"/>
+    <ImageView
+            android:src="@drawable/scanning"
+            android:layout_width="67dp"
+            android:layout_height="64dp" android:id="@+id/imageView13"
+            app:layout_constraintDimensionRatio="w,1:1" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@+id/guideline35"
+            app:layout_constraintBottom_toTopOf="@+id/guideline35"/>
+    <TextView
+            android:text="@string/goods_add_by_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView17"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline38" app:layout_constraintBottom_toTopOf="@+id/guideline38"
+            android:textSize="@dimen/normal_size" android:textStyle="bold"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/editTextNumberDecimal"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline36" app:layout_constraintBottom_toTopOf="@+id/guideline36"
+            android:hint="请输入商品条形码" android:singleLine="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" android:capitalize="none"
+            android:cursorVisible="false" android:ellipsize="none"
+            android:background="@android:drawable/editbox_background_normal"/>
+    <Button
+            android:text="@string/confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/button"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline39" app:layout_constraintBottom_toTopOf="@+id/guideline39"
+            android:background="@android:drawable/editbox_dropdown_light_frame"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline31"
+                                                android:orientation="horizontal"
+                                                app:layout_constraintGuide_percent="0.6"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline32"
+                                                android:orientation="vertical"
+                                                app:layout_constraintGuide_percent="0.05"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline66"
+                                                android:orientation="vertical"
+                                                app:layout_constraintGuide_percent="0.95"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline33"
+                                                android:orientation="vertical"
+                                                app:layout_constraintGuide_percent="0.30"/>
+    <androidx.constraintlayout.widget.Barrier android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                              android:id="@+id/barrier" app:barrierDirection="top"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline65"
+                                                android:orientation="horizontal"
+                                                app:layout_constraintGuide_percent="0.67"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:ems="10"
+            android:id="@+id/editTextTextPersonName11"
+            app:layout_constraintStart_toStartOf="@+id/guideline33"
+            app:layout_constraintTop_toTopOf="@+id/guideline65"
+            app:layout_constraintBottom_toTopOf="@+id/guideline65"
+            android:background="@android:drawable/editbox_background" app:layout_constraintHorizontal_bias="0.486"
+            app:layout_constraintVertical_bias="0.0" app:layout_constraintEnd_toStartOf="@+id/guideline66"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine|textPersonName"
+            android:text="Name"
+            android:ems="10"
+            android:id="@+id/editTextTextPersonName12"
+            app:layout_constraintStart_toStartOf="@+id/guideline33"
+            app:layout_constraintTop_toTopOf="@+id/guideline78"
+            app:layout_constraintBottom_toTopOf="@+id/guideline78"
+            android:background="@android:drawable/editbox_background" app:layout_constraintHorizontal_bias="0.486"
+            app:layout_constraintVertical_bias="0.0" app:layout_constraintEnd_toStartOf="@+id/guideline66"
+            android:minLines="3" android:gravity="top"/>
+    <TextView
+            android:text="@string/goods_name1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView36"
+            app:layout_constraintStart_toStartOf="@+id/guideline32"
+            app:layout_constraintEnd_toStartOf="@+id/guideline33" app:layout_constraintTop_toTopOf="@+id/guideline31"
+            app:layout_constraintBottom_toTopOf="@+id/guideline31" android:textSize="@dimen/normal_size"
+            android:textStyle="bold"/>
+    <TextView
+            android:text="@string/goods_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView37"
+            app:layout_constraintStart_toStartOf="@+id/guideline32"
+            app:layout_constraintEnd_toStartOf="@+id/guideline33" app:layout_constraintTop_toTopOf="@+id/guideline65"
+            app:layout_constraintBottom_toTopOf="@+id/guideline65" android:textSize="@dimen/normal_size"
+            android:textStyle="bold"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:ems="10"
+            android:id="@+id/editTextTextPersonName10"
+            app:layout_constraintStart_toStartOf="@+id/guideline33"
+            app:layout_constraintEnd_toStartOf="@+id/guideline66" app:layout_constraintTop_toTopOf="@+id/guideline31"
+            app:layout_constraintBottom_toTopOf="@+id/guideline31"
+            android:background="@android:drawable/editbox_background"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline78"
+                                                android:orientation="horizontal"
+                                                app:layout_constraintGuide_percent="0.76"/>
+    <TextView
+            android:text="@string/note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView38"
+            app:layout_constraintStart_toStartOf="@+id/guideline32"
+            app:layout_constraintEnd_toStartOf="@+id/guideline33" app:layout_constraintTop_toTopOf="@+id/guideline78"
+            app:layout_constraintBottom_toTopOf="@+id/guideline78" android:textStyle="bold"
+            android:textSize="@dimen/normal_size"/>
+    <Button
+            android:text="@string/add_goods_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/button3"
+            app:layout_constraintStart_toStartOf="@+id/guideline32"
+            app:layout_constraintEnd_toStartOf="@+id/guideline66" app:layout_constraintTop_toTopOf="@+id/guideline79"
+            app:layout_constraintBottom_toTopOf="@+id/guideline79"
+            android:background="@android:drawable/editbox_background"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline79"
+                                                android:orientation="horizontal"
+                                                app:layout_constraintGuide_percent="0.87"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

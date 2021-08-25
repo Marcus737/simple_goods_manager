@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/inventory_goods_list_item_guideline43"
+                                                android:orientation="horizontal"
+                                                app:layout_constraintGuide_percent="0.5"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/inventory_goods_list_item_guideline48"
+                                                android:orientation="vertical"
+                                                app:layout_constraintGuide_percent="0.35"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/inventory_goods_list_item_guideline49"
+                                                android:orientation="vertical"
+                                                app:layout_constraintGuide_percent="0.05"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/inventory_goods_list_item_guideline50"
+                                                android:orientation="vertical"
+                                                app:layout_constraintGuide_percent="0.95"/>
+    <com.wei.ysx_android.mview.ImageViewWithURL
+            android:src="@drawable/no_picture"
+            android:layout_width="59dp"
+            android:layout_height="59dp" tools:srcCompat="@tools:sample/backgrounds/scenic"
+            android:id="@+id/inventory_goods_list_item_imageView14"
+            app:layout_constraintStart_toStartOf="@+id/inventory_goods_list_item_guideline49"
+            app:layout_constraintEnd_toStartOf="@+id/inventory_goods_list_item_guideline48" app:layout_constraintTop_toTopOf="@+id/inventory_goods_list_item_guideline43"
+            app:layout_constraintBottom_toTopOf="@+id/inventory_goods_list_item_guideline43" app:layout_constraintDimensionRatio="w,1:1"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/inventory_goods_list_item_guideline51"
+                                                android:orientation="horizontal"
+                                                app:layout_constraintGuide_percent="0.27"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/inventory_goods_list_item_textView19"
+            app:layout_constraintBottom_toTopOf="@+id/inventory_goods_list_item_guideline51"
+            app:layout_constraintTop_toTopOf="@+id/inventory_goods_list_item_guideline51"
+            app:layout_constraintStart_toStartOf="@+id/inventory_goods_list_item_guideline48"
+            app:layout_constraintEnd_toStartOf="@+id/inventory_goods_list_item_guideline50" android:textSize="12sp"
+            android:textStyle="bold"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/inventory_goods_list_item_guideline52"
+                                                android:orientation="horizontal"
+                                                app:layout_constraintGuide_percent="0.73"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/inventory_goods_list_item_textView20"
+            app:layout_constraintBottom_toTopOf="@+id/inventory_goods_list_item_guideline52"
+            app:layout_constraintTop_toTopOf="@+id/inventory_goods_list_item_guideline52"
+            app:layout_constraintStart_toStartOf="@+id/inventory_goods_list_item_guideline48"
+            app:layout_constraintEnd_toStartOf="@+id/inventory_goods_list_item_guideline50" android:textSize="12sp"/>
+    <TextView
+            android:text="@string/goodsNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/inventory_goods_list_item_textView18"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/inventory_goods_list_item_guideline52"
+            app:layout_constraintTop_toTopOf="@+id/inventory_goods_list_item_guideline52"
+            app:layout_constraintHorizontal_bias="0.46" app:layout_constraintVertical_bias="0.578"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

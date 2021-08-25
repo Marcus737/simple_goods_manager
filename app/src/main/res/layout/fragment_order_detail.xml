@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   tools:context=".fragment.OrderDetailFragment">
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline94"
+                                                android:orientation="vertical"
+                                                app:layout_constraintGuide_percent="0.05"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline97"
+                                                android:orientation="vertical"
+                                                app:layout_constraintGuide_percent="0.50"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline95"
+                                                android:orientation="vertical"
+                                                app:layout_constraintGuide_percent="0.95"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline96"
+                                                android:orientation="horizontal"
+                                                app:layout_constraintGuide_percent="0.05"/>
+    <TextView
+            android:text="@string/order_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView44"
+            app:layout_constraintTop_toTopOf="@+id/guideline96"
+            app:layout_constraintBottom_toTopOf="@+id/guideline96"
+            app:layout_constraintEnd_toStartOf="@+id/guideline95"
+            app:layout_constraintStart_toStartOf="@+id/guideline94" android:textSize="@dimen/top_text_size"
+            android:textStyle="bold"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline98"
+                                                android:orientation="horizontal"
+                                                app:layout_constraintGuide_percent="0.15"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline99"
+                                                android:orientation="vertical"
+                                                app:layout_constraintGuide_percent="0.26"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline100"
+                                                android:orientation="vertical"
+                                                app:layout_constraintGuide_percent="0.73"/>
+    <TextView
+            android:text="@string/order_create_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView45"
+            app:layout_constraintStart_toStartOf="@+id/guideline94"
+            app:layout_constraintEnd_toStartOf="@+id/guideline97" app:layout_constraintTop_toTopOf="@+id/guideline98"
+            app:layout_constraintBottom_toTopOf="@+id/guideline98" android:textSize="@dimen/normal_size"
+            android:textStyle="bold"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView46"
+            app:layout_constraintStart_toStartOf="@+id/guideline97"
+            app:layout_constraintEnd_toStartOf="@+id/guideline95" app:layout_constraintTop_toTopOf="@+id/guideline98"
+            app:layout_constraintBottom_toTopOf="@+id/guideline98" android:textSize="@dimen/normal_size"
+            android:textStyle="bold"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline101"
+                                                android:orientation="horizontal"
+                                                app:layout_constraintGuide_percent="0.25"/>
+    <TextView
+            android:text="@string/order_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView47"
+            app:layout_constraintStart_toStartOf="@+id/guideline94"
+            app:layout_constraintEnd_toStartOf="@+id/guideline97" app:layout_constraintTop_toTopOf="@+id/guideline101"
+            app:layout_constraintBottom_toTopOf="@+id/guideline101" android:textSize="@dimen/normal_size"
+            android:textStyle="bold"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline102"
+                                                android:orientation="horizontal"
+                                                app:layout_constraintGuide_percent="0.33"/>
+    <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toTopOf="@+id/guideline102"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="@+id/guideline94"
+            app:layout_constraintEnd_toStartOf="@+id/guideline95" android:id="@+id/orderListDetail"/>
+    <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/guideline97"
+            app:layout_constraintEnd_toStartOf="@+id/guideline95"
+            app:layout_constraintBottom_toTopOf="@+id/guideline101"
+            app:layout_constraintTop_toTopOf="@+id/guideline101" android:id="@+id/rg">
+        <RadioButton
+                android:text="@string/no_pay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/no_pay"/>
+        <RadioButton
+                android:text="@string/payed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/payed"/>
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>
